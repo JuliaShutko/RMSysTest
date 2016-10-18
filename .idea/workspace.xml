@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f2c883a-7643-4dd2-97ce-6894a4d75bbb" name="Default" comment="Methods and locators that are not used in the tests are removed">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_53_0.xml" />
-      <change type="DELETED" beforePath="D:\Trainings\Automation training\Git\RMSysTest\src\main\java\helpers\Locators.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Trainings\Automation training\Git\RMSysTest\src\main\resources\locators.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\Trainings\Automation training\Git\RMSysTest\target\classes\helpers\Locators$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Trainings\Automation training\Git\RMSysTest\target\classes\helpers\Locators$LocatorType.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Trainings\Automation training\Git\RMSysTest\target\classes\helpers\Locators.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Trainings\Automation training\Git\RMSysTest\target\classes\locators.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" afterPath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMSysTest.iml" afterPath="$PROJECT_DIR$/RMSysTest.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="8f2c883a-7643-4dd2-97ce-6894a4d75bbb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RMSysTest.iws" />
@@ -551,6 +537,13 @@
       <option name="number" value="Default" />
       <updated>1476453540605</updated>
     </task>
+    <task id="LOCAL-00001" summary="Methods and locators that are not used in the tests are removed">
+      <created>1476786092240</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1476786092240</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
