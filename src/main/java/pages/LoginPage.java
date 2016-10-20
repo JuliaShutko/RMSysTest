@@ -21,17 +21,17 @@ public class LoginPage {
         this.driver = driver;
     }
 
-    public void setUserName(String strUserName){
+    public void setUserName(String strUserName) {
         WebElement userNameField = driver.findElement(userName);
         userNameField.sendKeys(strUserName);
     }
 
-    public void setPassword(String strPassword){
+    public void setPassword(String strPassword) {
         WebElement passwordField = driver.findElement(password);
         passwordField.sendKeys(strPassword);
     }
 
-    public void clickLogin(){
+    public void clickLogin() {
         WebElement submitButton = driver.findElement(submit);
         submitButton.click();
     }

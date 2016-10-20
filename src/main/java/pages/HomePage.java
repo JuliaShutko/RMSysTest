@@ -12,7 +12,7 @@ public class HomePage {
 
     private By logout = get("homePage.logoutLink");
 
-    public HomePage(WebDriver driver){
+    public HomePage(WebDriver driver) {
         this.driver = driver;
     }
 
