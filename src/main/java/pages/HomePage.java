@@ -11,7 +11,7 @@ public class HomePage {
     @FindBy(css = ".sign-out-span ins")
     private WebElement logout;
 
-    public HomePage(WebDriver driver){
+    public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

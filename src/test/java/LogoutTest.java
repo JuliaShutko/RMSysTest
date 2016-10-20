@@ -18,7 +18,7 @@ public class LogoutTest {
     public static final String BASE_URL = "https://192.168.100.26/";
 
     @BeforeMethod
-    public void setup(){
+    public void setup() {
         driver = new FirefoxDriver();
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -27,14 +27,14 @@ public class LogoutTest {
     }
 
     @AfterMethod
-    public void  quit() {
+    public void quit() {
         driver.quit();
     }
 
     @Test
     public void logoutTest() throws InterruptedException {
         objLogin = new LoginPage(driver);
-        objHomePage = objLogin.login("EugenBorisik","123");
+        objHomePage = objLogin.login("EugenBorisik", "123");
         Assert.assertTrue(driver.getTitle().equals("RMSys - Home"));
         objLogin = objHomePage.logout();
         Assert.assertEquals(driver.getTitle(), "RMSys - Sign In");

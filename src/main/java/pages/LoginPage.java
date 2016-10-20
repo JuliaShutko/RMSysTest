@@ -31,11 +31,11 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
-    public void setPassword(String strPassword){
+    public void setPassword(String strPassword) {
         passwordField.sendKeys(strPassword);
     }
 
-    public void clickLogin(){
+    public void clickLogin() {
         submitButton.click();
     }
 
