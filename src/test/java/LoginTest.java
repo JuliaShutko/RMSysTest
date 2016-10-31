@@ -10,10 +10,15 @@ import java.util.concurrent.TimeUnit;
 
 public class LoginTest {
 
-    WebDriver driver;
-    LoginPage objLogin;
-    HomePage objHomePage;
+    public WebDriver driver;
+    public LoginPage objLogin;
+    public HomePage objHomePage;
     public static final String BASE_URL = "https://192.168.100.26/";
+    private static final String LOGIN = "EugenBorisik";
+    private static final String PASSWORD = "123";
+    private static final String EMPTY_PASSWORD = "";
+    private static final String HOME_PAGE_NAME = "RMSys - Home";
+    private static final String PASSWORD_FIELD_VALIDATION_MESSAGE = "Password is required";
 
     @BeforeMethod
     public void setup() {
@@ -32,17 +37,15 @@ public class LoginTest {
     @Test
     public void successLoginTest() throws InterruptedException {
         objLogin = new LoginPage(driver);
-        objHomePage = objLogin.login("EugenBorisik", "123");
-        Assert.assertTrue(driver.getTitle().equals("RMSys - Home"));
+        objHomePage = objLogin.login(LOGIN, PASSWORD);
+        Assert.assertTrue(driver.getTitle().equals(HOME_PAGE_NAME));
     }
 
     @Test
     public void failedLoginTest() throws InterruptedException {
         objLogin = new LoginPage(driver);
-        objHomePage = objLogin.login("EugenBorisik", "");
-        Assert.assertTrue(driver.getTitle().equals("RMSys - Sign In"));
+        objHomePage = objLogin.login(LOGIN, EMPTY_PASSWORD);
         WebElement passwordValidationMessage = objLogin.getValidationMessageElement();
-        Assert.assertTrue(passwordValidationMessage.isDisplayed());
-        Assert.assertEquals(passwordValidationMessage.getText(), "Password is required");
+        Assert.assertEquals(passwordValidationMessage.getText(), PASSWORD_FIELD_VALIDATION_MESSAGE);
     }
 }

@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
-    WebDriver driver;
+    public WebDriver driver;
 
     @FindBy(css = ".sign-out-span ins")
     private WebElement logout;
