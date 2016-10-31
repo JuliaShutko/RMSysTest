@@ -12,10 +12,14 @@ import java.util.concurrent.TimeUnit;
 
 public class LogoutTest {
 
-    WebDriver driver;
-    LoginPage objLogin;
-    HomePage objHomePage;
+    public WebDriver driver;
+    public LoginPage objLogin;
+    public HomePage objHomePage;
     public static final String BASE_URL = "https://192.168.100.26/";
+
+    private static final String USERNAME = "EugenBorisik";
+    private static final String PASSWORD = "123";
+    private static final String LOGIN_PAGE_NAME = "RMSys - Sign In";
 
     @BeforeMethod
     public void setup(){
@@ -34,12 +38,9 @@ public class LogoutTest {
     @Test
     public void logoutTest() throws InterruptedException {
         objLogin = new LoginPage(driver);
-        objHomePage = objLogin.login("EugenBorisik","123");
-        Assert.assertTrue(driver.getTitle().equals("RMSys - Home"));
+        objHomePage = objLogin.login(USERNAME,PASSWORD);
         objLogin = objHomePage.logout();
-        Assert.assertEquals(driver.getTitle(), "RMSys - Sign In");
-        WebElement loginForm = objLogin.getLoginFormElement();
-        Assert.assertTrue(loginForm.isDisplayed());
+        Assert.assertEquals(driver.getTitle(), LOGIN_PAGE_NAME);
     }
 
 }

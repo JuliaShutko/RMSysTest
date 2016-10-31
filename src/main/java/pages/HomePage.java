@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import static helpers.Locators.get;
 
 public class HomePage {
-    WebDriver driver;
+    public WebDriver driver;
 
-    private By logout = get("homePage.logoutLink");
+    private static final By logout = get("homePage.logoutLink");
 
     public HomePage(WebDriver driver){
         this.driver = driver;
