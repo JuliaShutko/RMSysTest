@@ -9,13 +9,13 @@ import org.openqa.selenium.WebElement;
 import static helpers.Locators.get;
 
 public class LoginPage {
-    WebDriver driver;
+    public WebDriver driver;
 
-    private By userName = get("loginPage.userName");
-    private By password = get("loginPage.password");
-    private By submit = get("loginPage.submit");
-    private By passwordValidation = get("loginPage.validationMessage");
-    private By loginForm = get("loginPage.loginForm");
+    private final static By userName = get("loginPage.userName");
+    private final static By password = get("loginPage.password");
+    private final static By submit = get("loginPage.submit");
+    private final static By passwordValidation = get("loginPage.validationMessage");
+    private final static By loginForm = get("loginPage.loginForm");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
